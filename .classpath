@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/netty-3.2.4.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="lib/hbase-0.90.1.jar"/>
+	<classpathentry kind="lib" path="lib/zookeeper-3.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-core-0.20-append-r1056497.jar"/>
+	<classpathentry kind="lib" path="lib/apache-cassandra-clientutil-1.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/apache-cassandra-thrift-1.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/libthrift-0.6.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="BW_ENGINE_JAR"/>
+	<classpathentry kind="var" path="BW_XDATA_JAR"/>
+	<classpathentry kind="var" path="TRA_TIBCOXML_JAR"/>
+	<classpathentry kind="var" path="TRA_TIBCORT_JAR"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

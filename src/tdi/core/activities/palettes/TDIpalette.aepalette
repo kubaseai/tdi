@@ -1,0 +1,18 @@
+<palette name="ae.palette.TDI.palette" bundle="tdi.core.activities.palettes.Resources" version="5.99" group="ae.activity.palettegroup">
+
+    <palette.entry type="ae.activities.SetupMocksActivity"/>  
+    <palette.entry type="ae.activities.GetGlobalVariablesAsXmlActivity"/>  
+    <palette.entry type="ae.activities.InjectGlobalVariablesActivity"/>
+    <palette.entry type="ae.activities.InitActivity"/>    
+    <palette.entry type="ae.activities.SetVariableActivity"/>
+	<palette.entry type="ae.activities.GetProcessesFromDirActivity"/>
+    <palette.category category="ae.activity.resource" />
+    <palette.category category="ae.resource" />  
+    <palette.objectfactory type="ae.activities.SetupMocksActivity"/>
+    <palette.objectfactory type="ae.activities.GetGlobalVariablesAsXmlActivity"/>
+    <palette.objectfactory type="ae.activities.InjectGlobalVariablesActivity"/>
+    <palette.objectfactory type="ae.activities.InitActivity"/>
+    <palette.objectfactory type="ae.activities.SetVariableActivity"/>
+	<palette.objectfactory type="ae.activities.GetProcessesFromDirActivity"/>
+
+</palette>

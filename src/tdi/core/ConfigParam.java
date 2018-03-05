@@ -1,0 +1,11 @@
+package tdi.core;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ConfigParam {
+	String name();
+	String desc();
+	String value();
+}

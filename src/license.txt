@@ -1,0 +1,4 @@
+Granted to: devops;
+Granted till: 2099-01-01;
+Granted machines: *;
+Serial: 7FA9655;

@@ -1,0 +1,62 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="ReceiverService" targetNamespace="http://tsi/"
+	xmlns:ns1="http://schemas.xmlsoap.org/soap/http"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://tsi/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:types>
+		<xsd:schema attributeFormDefault="unqualified"
+			elementFormDefault="qualified" targetNamespace="http://tsi/"
+			xmlns:tns="http://tsi/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:element name="event" type="tns:event" />
+			<xsd:complexType name="event">
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="msg" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="eventResponse" type="tns:eventResponse" />
+			<xsd:complexType name="eventResponse">
+				<xsd:sequence>
+					<xsd:element minOccurs="0" name="return" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="event">
+		<wsdl:part element="tns:event" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="eventResponse">
+		<wsdl:part element="tns:eventResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ReceiverServicePortType">
+		<wsdl:operation name="event">
+			<wsdl:input message="tns:event" name="event">
+			</wsdl:input>
+			<wsdl:output message="tns:eventResponse" name="eventResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ReceiverServiceSoapBinding"
+		type="tns:ReceiverServicePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="event">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input name="event">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="eventResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ReceiverService">
+		<wsdl:port binding="tns:ReceiverServiceSoapBinding"
+			name="ReceiverServicePort">
+			<soap:address location="http://localhost:8080/TSI/services/receiver" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
